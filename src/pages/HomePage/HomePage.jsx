@@ -1,64 +1,143 @@
 import "./HomePage.css";
+import { Card, Button, Row, Col } from "antd";
+import { Link } from "react-router-dom";
+import { Typography } from "antd";
+const { Title } = Typography;
 
 export default function HomePage() {
   return (
-    <div className="home__container">
-      <h1>Welcome to InvestMint</h1>
-      <div className="home__getStarted">
-        <div className="home__mission">
-          <h1>Mission Statement</h1>
-          <br />
-          <button className="btn btn-primary">Get Started</button>
-        </div>
-        <div>
-          <img
-            src="https://mediacloud.kiplinger.com/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1620225658/Investing/nft-2021.jpg"
-            alt=""
-          />
-        </div>
-      </div>
+    <Row>
+      <Col span={24}>
+        <div className="home__container">
+          <h1>Welcome to Investmint</h1>
 
-      <div className="home__investing__container">
-        <div className="home__investing__title">
-          <h1 id="investing">Investing in NFTs </h1>{" "}
-          <h1 id="simplified">Simplified</h1>
-        </div>
-        <div className="home__investing__content">
-          <div className="home__investing__text">
-            Investing in new technology can be intimidating and overwhelming. We
-            break down the barriers of entry and simplify the process so
-            everyone has the opportunity to invest in their future.
-          </div>
+          <Card className="home__info">
+            <div className="home__info__flex">
+              <Row>
+                <Col
+                  xs={{ span: 24 }}
+                  sm={{ span: 12 }}
+                  id="home__what__img"
+                  className="home__img"
+                >
+                  <div style={{ height: "150px", width: "fit-content" }}>
+                    {/* <img
+                      className="card__img"
+                      src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/izUv0yep.bwI/v1/1200x-1.jpg"
+                      alt=""
+                    /> */}
+                  </div>
+                </Col>
+                <Col xs={{ span: 24 }} sm={{ span: 12 }}>
+                  <div className="home__info_detail home__info__what">
+                    <Title level={4}>What is an NFT?</Title>
+                    <p>
+                      An NFT (Non-fungible token) is a digital asset that
+                      represents real world objects such as artwork, video
+                      clips, pokemon cards, even a Twitter post!
+                      <br />
+                      <strong>The possibilities are endless.</strong>
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Card>
 
-          <img src="https://i1.wp.com/www.additudemag.com/wp-content/uploads/2021/01/GettyImages-532572642.jpg?resize=1280%2C720px&ssl=1" />
+          <Card className="home__info">
+            <div className="home__info__flex">
+              <Row>
+                <Col xs={{ span: 24 }} sm={{ span: 12 }} id="home__where__img">
+                  <div style={{ height: "150px", width: "fit-content" }}>
+                    {/* <img
+                      src="https://zionpeople.nz/wp-content/uploads/2021/10/confused-1.jpeg"
+                      alt=""
+                    /> */}
+                  </div>
+                </Col>
+                <Col xs={{ span: 24 }} sm={{ span: 12 }}>
+                  <div className="home__info_detail home__info__where">
+                    <Title level={5}>Where does it come from?</Title>
+                    <p>
+                      The concept of NFTs was first introduced in a paper from
+                      December 2012 by Meni Rosenfeld. The first known NFT
+                      "Quantum" was created on May 2014. Several years of
+                      development and experimentation led a shift for NFTs onto
+                      the Ethereum blockchain.
+                    </p>
+                    <Link to="/timeline">
+                      <Button className="home__info__btn__timeline">
+                        Timeline of NFTs
+                      </Button>
+                    </Link>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Card>
+
+          <Card className="home__info">
+            <div className="home__info__flex">
+              <Row>
+                <Col xs={{ span: 24 }} sm={{ span: 12 }} id="home__how__img">
+                  <div style={{ height: "150px", width: "fit-content" }}>
+                    {/* <img
+                    src="https://image.coinpedia.org/wp-content/uploads/2021/08/24183257/Minting-NFT--780x470.webp"
+                    alt=""
+                  /> */}
+                  </div>
+                </Col>
+                <Col xs={{ span: 24 }} sm={{ span: 12 }}>
+                  <div className="home__info_detail home__info__how">
+                    <Title level={5}>How are NFTs made?</Title>
+                    <p className="home__info__how">
+                      The process of creating an NFT is called{" "}
+                      <strong>minting</strong>. You can create an NFT by
+                      uploading a high quality representation of your digital
+                      item on a NFT marketplace such as OpenSea.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Card>
+
+          <Card className="home__info">
+            <div className="home__info__flex">
+              <Row>
+                <Col xs={{ span: 24 }} sm={{ span: 12 }} id="home__why__img">
+                  <div style={{ height: "150px", width: "fit-content" }}>
+                    {/* <img
+                      src="https://zionpeople.nz/wp-content/uploads/2021/10/confused-1.jpeg"
+                      alt=""
+                    /> */}
+                  </div>
+                </Col>
+                <Col xs={{ span: 24 }} sm={{ span: 12 }}>
+                  <div className="home__info_detail home__info__why">
+                    <Title level={5}>
+                      Why should you learn more about NFTs ?
+                    </Title>
+                    <p>
+                      NFTs are an exciting because of the potential its
+                      technology could bring and where it could take us in the
+                      future. You can imagine how the concept of NFTs can change
+                      the way we record and transfer information. Whether you
+                      are a potential investor or just a curious mind, it
+                      doesn't hurt to learn more about the ever growing and
+                      popular trend of NFTs.
+                    </p>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+          </Card>
+
+          <Link to="/info">
+            <Button type="primary">Learn more</Button>
+          </Link>
         </div>
-      </div>
-      <div className="home__how">
-        <h1>How It Works</h1>
-        <div className="home__how__column">
-          <div className="home__how__info">
-            <p>Deposit</p>
-            <img
-              src="https://pnimg.net/w/sitemap-attachments/1/5e4/1191043522.png"
-              alt=""
-            />
-          </div>
-          <div className="home__how__info">
-            <p>Preferences</p>
-            <img
-              src="https://talkstar-assets.s3.amazonaws.com/production/playlists/playlist_164/choices.jpg"
-              alt=""
-            />
-          </div>
-          <div className="home__how__info">
-            <p>Invest</p>
-            <img
-              src="https://media.gq-magazine.co.uk/photos/5e25d00550c26e0008a9b030/master/pass/20200120-invest.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+      </Col>
+    </Row>
   );
 }

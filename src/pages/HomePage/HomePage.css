@@ -1,66 +1,68 @@
-.home__getStarted {
-    border: 1px solid gray;
-    display: flex;
-    width: 70vw;
-    max-height: 200px;
-    margin: 0 auto;
-    justify-content: space-between;
-  }
-  .home__mission {
-    padding: 10px;
-    width: 50%;
-  }
-  .home__getStarted img {
-    width: 50%;
-  }
-  
-  .home__investing__container {
-    margin: 10px;
-  }
-  .home__investing__title {
-    display: flex;
-    justify-content: center;
-  }
-  #investing {
-    margin-right: 15px;
-  }
-  #simplified {
-    font-weight: bold;
-  }
-  .home__investing__title {
-    display: flex;
-  }
-  .home__investing__content {
-    display: flex;
-  }
-  .home__investing__text {
-    margin-right: 10px;
-  }
-  .home__investing__container img {
-    width: 40% !important;
-  }
-  
-  .home__how {
-    border: 1px solid gray;
-    width: 70vw;
-    margin: 0 auto;
-  }
-  .home__how__column {
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-  }
-  .home__how__info {
-    border: 1px solid green;
-    width: 80px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .home__how__info img {
-    /* width: 100%; */
-    height: 100%;
-    /* min-height: 100%; */
-  }
-  
+.home__container {
+  /* border: 1px solid red; */
+  padding: 30px 0;
+}
+.home__info {
+  width: 70vw;
+  margin: 0 auto 20px !important;
+  border-radius: 5px;
+  box-shadow: 5px 10px #888888;
+}
+.home__info__flex {
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+.home__info__what {
+  width: 100% !important;
+}
+
+#home__what__img {
+  background: url(https://www.theindustry.fashion/wp-content/uploads/2021/12/BAYC-Pretty-Little-Things.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#home__where__img {
+  background: url(https://zionpeople.nz/wp-content/uploads/2021/10/confused-1.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#home__how__img {
+  background: url(https://image.coinpedia.org/wp-content/uploads/2021/08/24183257/Minting-NFT--780x470.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#home__why__img {
+  /* background: url(
+    https://img-cdn.inc.com/image/upload/w_1920,
+    h_1080,
+    c_fill/images/panoramic/GettyImages-1308232724-v2_465554_xl8sv5.jpg
+  ); */
+  background: url(https://futuribile.org/wp-content/uploads/2021/04/nyan-1080x675.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home__info_detail {
+  width: 100%;
+  /* border: 1px solid rgb(0, 0, 0); */
+  padding: 10px;
+}
+.home__info_img {
+  width: 50%;
+  border: 1px solid green;
+}
+.home__info_img img {
+  width: 100%;
+}
+.home__info__how {
+  margin-right: 3px;
+  padding: 2px;
+}
+.home__info__btn__timeline {
+  background-color: lightgray;
+}

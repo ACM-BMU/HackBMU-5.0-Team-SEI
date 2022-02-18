@@ -1,0 +1,37 @@
+.info__container {
+    height: 100vh;
+}
+
+.info__container img {
+    width: 200px;
+}
+.info__card {
+    width: 90%;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+    padding: 1rem;
+    border: 1px solid red;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+/* .attr-tags {
+    margin: 5px;
+}
+
+.contract-address {
+    width: 100% !important;
+    margin-top: 1rem;
+    font-size: 0.8rem !important;
+} */
+.item__description {
+    margin-top: 1rem;
+}
+.contract-address {
+    width: max-content;
+    margin: 0 auto;
+}
+.NFT__link__container {
+    display: flex;
+    justify-content: flex-end;
+}
+  
