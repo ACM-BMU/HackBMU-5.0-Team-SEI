@@ -310,7 +310,7 @@ export default function InfoPage() {
           </Card>
         </Col>
       ) : (
-        <h3>no data</h3>
+        <h3>Loading... </h3>
       )}
     </div>
   );

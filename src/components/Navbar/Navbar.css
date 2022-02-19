@@ -1,8 +1,7 @@
 .nav-link {
-    display: flex;
+    display: flex !important;
     align-items: center !important;
 }
-
 .nav__icon {
     margin-right: 0.3rem;
 }
