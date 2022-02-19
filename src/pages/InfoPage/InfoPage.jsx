@@ -88,7 +88,7 @@ export default function InfoPage() {
       const obj = result;
       // parses a JSON string, constructing the JS value or object
       const stringify = JSON.parse(obj);
-      console.log(stringify);
+      // console.log(stringify);
       setItem(stringify);
     }
     getItem();
