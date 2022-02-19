@@ -1,5 +1,6 @@
 .info__container {
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 30px;
 }
 
 .info__container img {
@@ -10,21 +11,47 @@
     margin-top: 3rem !important;
     margin-bottom: 3rem !important;
     padding: 1rem;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-left: auto !important;
     margin-right: auto !important;
+    box-shadow: 5px 10px #888888;
 }
-/* .attr-tags {
+.info__like {
+    display: flex;
+    align-items: center;
+}
+.attr-tags {
     margin: 5px;
 }
 
-.contract-address {
+/* .contract-address {
     width: 100% !important;
     margin-top: 1rem;
     font-size: 0.8rem !important;
-} */
+}  */
+.item__pricing {
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: lightgray;
+    text-align: start;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+.item__coin__price {
+    display: flex;
+    align-items: flex-start;
+}
+.item__coin__price img {
+    height: 20px;
+    width: auto;
+}
+.item__buybtn {
+    display: flex;
+    padding-bottom: 10px;
+}
 .item__description {
     margin-top: 1rem;
+    text-align: start;
 }
 .contract-address {
     width: max-content;
@@ -33,5 +60,15 @@
 .NFT__link__container {
     display: flex;
     justify-content: flex-end;
+}
+.item__sale__time {
+    margin-top: 1rem;
+}
+.buyDrawer__heading {
+    display: flex;
+    align-items: center;
+}
+.info__cryptowallet {
+    padding-left: 10px;
 }
   
