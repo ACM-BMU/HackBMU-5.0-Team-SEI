@@ -34,14 +34,14 @@ export default function NewsPage() {
     getNews();
   }, []);
 
- 
+  // console.log('eahehhe', news.value);
 
   return (
     <div>
       {news ? (
         // console.log(news.value)
         news.value.map((n, idx) => (
-          <Col xs={24} sm={12} lg={8} key={idx}>
+          <Col xs={24} key={idx}>
             <Card hoverable className="news-card">
               <a href={n.url} target="_blank" rel="norefferer">
                 <div className="news-image-container">
@@ -51,14 +51,14 @@ export default function NewsPage() {
                   {/* Display news article image or default image if none */}
                   <img
                     style={{ maxWidth: "200px", maxHeight: "100px" }}
-                    src={news?.image?.thumbnail?.contentUrl || demoImage}
+                    src={n?.image?.thumbnail?.contentUrl || demoImage}
                     alt="news"
                   />
                 </div>
                 <p>
-                  {news.description > 100
-                    ? `${news.description.substring(0, 100)}...`
-                    : news.description}
+                  {n.description > 100
+                    ? `${n.description.substring(0, 100)}...`
+                    : n.description}
                 </p>
                 <div className="provider-container">
                   <div>
