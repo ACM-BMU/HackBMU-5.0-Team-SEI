@@ -34,7 +34,6 @@ export default function NewsPage() {
     getNews();
   }, []);
 
-  // console.log('eahehhe', news.value);
 
   return (
     <div>
@@ -79,7 +78,7 @@ export default function NewsPage() {
           </Col>
         ))
       ) : (
-        <p>no</p>
+        ""
       )}
     </div>
   );

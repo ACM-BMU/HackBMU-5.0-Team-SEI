@@ -1,3 +1,6 @@
+// This code below is for future use and not used in product 
+// It uses the Alchemy API to fetch more NFT metadata
+
 // import fetch from "node-fetch";
 
 export async function getAll() {
@@ -32,21 +35,8 @@ export async function getDetail(address) {
     // const fetchURL = `${baseURL}?contractAddress=${contractAddr}`;
     const fetchURL = `${baseURL}?contractAddress=${contractAddr}&tokenId=${tokenId}&tokenType=${tokenType}`;
 
-    // fetch(fetchURL, requestOptions)
-    // .then(response => console.log(response.json()))
-    // .then(response => JSON.stringify(response, null, 2))
-    // .then(result => console.log(result))
-    // .catch(error => console.log('error', error))
-
     await fetch (fetchURL, requestOptions)
     .then(res => res.json())
     .then(res2 => res2)
     .catch(error => console.log('error', error))
-
-    // const res = await fetch(fetchURL, requestOptions);
-    // if (res.ok) {
-    //     console.log(res.json());
-    //     return res.json();
-    // }
-    // throw new Error("Bad Request");
 }

@@ -33,14 +33,6 @@ export default function InfoPage() {
     setBuyDrawerVisible(!buyDrawerVisible);
   }
 
-  // function showBuyDrawer () {
-  //   setBuyDrawerVisible(true)
-  // }
-
-  // function closeBuyDrawer () {
-  //   setBuyDrawerVisible(false)
-  // }
-
   const [likes, setLikes] = useState(0);
 
   // Attributes Modal
@@ -149,7 +141,6 @@ export default function InfoPage() {
             <br />
             <Image src={item.metadata.image} alt="" />
             <br />
-            {/* <img src={`https://ipfs.io/ipfs/${baseIPFS}`} alt="" /> */}
 
             <Meta
               // title={<h2>{item.title.toUpperCase()}</h2>}
@@ -232,29 +223,6 @@ export default function InfoPage() {
                 View NFT
               </a>
             </div>
-            {/* <p>Title: {item.title}</p> */}
-            {/* <p>Description: {item.description}</p> */}
-            {/* <Tooltip
-              placement="left"
-              autoAdjustOverflow
-              color="blue"
-              title="Contract address is where your contract is stored in the blockchain!"
-            > */}
-            {/* <Col className="contract-address">
-              <Button>Contract Address</Button> */}
-            {/* {item.contract.address} */}
-            {/* </Col> */}
-            {/* </Tooltip> */}
-            {/* <p>External URL: {item.metadata.external_url}</p> */}
-            {/* <ul> */}
-            {/* {item.metadata.attributes.map((a) => {
-              return (
-                <li>
-                  {a.value}, {a.trait_type}
-                </li>
-              );
-            })} */}
-            {/* </ul> */}
 
             {/* Attributes Modal */}
             <Modal

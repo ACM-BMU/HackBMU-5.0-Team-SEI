@@ -1,7 +1,7 @@
 .timeline__container {
     margin-top: 30px;
     width: 98vw;
-    height: 100vh;
+    height: 100%;
 }
 .timeline__title {
     border-bottom: 1px solid black;
