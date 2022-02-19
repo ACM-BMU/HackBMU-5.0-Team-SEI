@@ -9,13 +9,13 @@
   box-shadow: 5px 10px #888888;
 }
 .home__info__flex {
-  display: flex;
+  /* display: flex; */
   /* border: 1px solid red; */
 }
 
-.home__info__what {
+/* .home__info__what {
   width: 100% !important;
-}
+} */
 
 #home__what__img {
   background: url(https://www.theindustry.fashion/wp-content/uploads/2021/12/BAYC-Pretty-Little-Things.jpg);
@@ -66,3 +66,9 @@
 .home__info__btn__timeline {
   background-color: lightgray;
 }
+
+@media only screen and (min-width: 800px) {
+  .home__info {
+    max-width: 700px;
+  }
+} 

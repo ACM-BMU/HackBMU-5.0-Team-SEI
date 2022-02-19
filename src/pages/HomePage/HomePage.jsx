@@ -9,7 +9,7 @@ export default function HomePage() {
     <Row>
       <Col span={24}>
         <div className="home__container">
-          <h1>Welcome to Investmint</h1>
+          <h1 className="display-2"><strong>Welcome to InvestMint</strong></h1>
 
           <Card className="home__info">
             <div className="home__info__flex">
@@ -18,7 +18,6 @@ export default function HomePage() {
                   xs={{ span: 24 }}
                   sm={{ span: 12 }}
                   id="home__what__img"
-                  className="home__img"
                 >
                   <div style={{ height: "150px", width: "fit-content" }}>
                     {/* <img
